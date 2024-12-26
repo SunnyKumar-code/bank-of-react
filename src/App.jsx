@@ -84,7 +84,7 @@ function App() {
           {/* Tenure */}
           <Typography variant="h6">Tenure</Typography>
           <Select
-            
+
             value={tenure}
             onChange={(e) => setTenure(e.target.value)}
             fullWidth
@@ -112,19 +112,7 @@ function App() {
                 },
               ],
             }}
-            options={{
-              plugins: {
-                tooltip: {
-                  callbacks: {
-                    label: function (tooltipItem) {
-                      const label = tooltipItem.label || "";
-                      const value = tooltipItem.raw || 0;
-                      return `${label}: $${value.toFixed(2)}`;
-                    },
-                  },
-                },
-              },
-            }}
+    
           />
         </div>
       </div>
