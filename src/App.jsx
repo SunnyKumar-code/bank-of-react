@@ -107,8 +107,8 @@ function App() {
               fontFamily: "Helvetica",
             }}
           >
-           <span>$ 0</span>
-           <span>$ {homeValue}</span>
+            <span>$ 0</span>
+            <span>$ {homeValue}</span>
           </div>
           {/* Interest Rate */}
           <Typography variant="h6">Interest Rate</Typography>
@@ -156,10 +156,12 @@ function App() {
               labels: ["Principal", "Interest"],
               datasets: [
                 {
+                  label: "Ration of principle and intrest",
                   data:
                     loanAmount === 0 ? [1, 0] : [principalPaid, interestPaid],
-                  backgroundColor: ["#FF6384", "#36A2EB"],
-                  hoverBackgroundColor: ["#FF6384", "#36A2EB"],
+                  backgroundColor: ["#FFD9E1", "#CDEBFF"],
+                  borderColor: ["#FF5277", "#52B9FE"],
+                  borderWidth: 1,
                 },
               ],
             }}
